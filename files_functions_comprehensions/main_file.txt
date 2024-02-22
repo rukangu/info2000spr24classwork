@@ -1,0 +1,17 @@
+{
+      "Marie": {
+            "height": 170.0,
+            "age": 42.0,
+            "major": "physics"
+      },
+      "Einstein": {
+            "height": 170.0,
+            "age": 45.0,
+            "major": "Physics"
+      },
+      "Johnsen": {
+            "height": 190.0,
+            "age": 40.0,
+            "major": "ECE"
+      }
+}
