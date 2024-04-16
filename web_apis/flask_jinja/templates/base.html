@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {%block title %} Base {% endblock%}</title>
+    <style>
+            nav ul li{
+                display: inline-block;
+                padding: 10px;
+                margin: 10px;
+            }
+            div{
+                margin: 10px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="{{url_for('index')}}"> Home </a> </li>
+                <li> <a href="{{url_for('view_students')}}"> View </a>   </li>
+                <li><a href="{{url_for('add_student')}}">Add </a>    </li>
+            </ul>
+        </nav>
+
+    </header>
+    {% block content %}
+        This the default message
+    {% endblock %}
+</body>
+</html>

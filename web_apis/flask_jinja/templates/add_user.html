@@ -1,0 +1,43 @@
+
+{%extends 'base.html' %}
+
+{% block title %}
+Add User
+{% endblock %}
+
+{% block content %}
+    <form action="{{url_for('view_students')}}" method="post">
+        <div>
+            <label for="f_name">First Name</label>
+            <input id="f_name" name="first_name" type="text" autofocus placeholder="First Name">
+        </div>
+<div>
+    <label for="l_name">Last Name</label>
+    <input id="f_name" name="surname" type="text" placeholder="Last Name">
+
+<div>
+    <select name="level"> 
+        <option value="undergraduate">Undergrad</option> 
+        <option value="graduate">Grad</option> 
+    </select>
+</div>
+
+<div>
+
+<input name="favorite_color" list="colorlist" placeholder="Color"> 
+    <datalist id = "colorlist"> 
+        <option value="red">red</option> 
+        <option value="green">green</option> 
+        <option value="blue">blue</option> 
+    </datalist>
+</div>
+
+<div>
+    <input type="submit">
+</div>
+
+</div>
+
+
+    </form>
+{%endblock%}
