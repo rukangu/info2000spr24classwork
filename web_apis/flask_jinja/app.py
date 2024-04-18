@@ -7,7 +7,7 @@ def index():
     return render_template('index.html')
 
 # adds new student to database
-@app.route('/add')
+@app.route('/add/')
 def add_student():
     return render_template('add_user.html')
 
